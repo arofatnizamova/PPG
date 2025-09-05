@@ -12,7 +12,7 @@ $(document).ready(function () {
         let extraOptions = {}
         if (slider.hasClass('watch-later')) {
             extraOptions = {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 centerMode: false,
                 arrows: true,

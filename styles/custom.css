@@ -61,6 +61,15 @@ header {
 .slider-card {
     border: 2px solid var(--color-corp);
     border-radius: 30px;
+    height: 400px;
+}
+
+.slider-card img {
+    transition: all 0.3s ease;
+}
+
+.slider-card:hover img {
+    transform: scale(1.05);
 }
 
 footer {
@@ -85,5 +94,11 @@ footer {
 
     .fs-6 {
         font-size: 0.8rem !important;
+    }
+
+    .slider-card {
+        border: 2px solid var(--color-corp);
+        border-radius: 0;
+        height: 300px;
     }
 }

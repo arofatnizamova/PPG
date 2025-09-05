@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand me-xxl-5 me-sm-3 me-1" href="index.html">
+                    <img src="icons/logo.svg" alt="" class="img-fluid logo">
+                </a>
+                <div class="d-xl-none d-flex align-items-center gap-md-4 gap-2">
+                    <button class="navbar-toggler btn-corp border-0 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button class="border-0 btn-corp d-flex align-items-center text-dark-gray dropdown-toggle language" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ру
+                        </button>
+                        <ul class="dropdown-menu language-mobile">
+                            <li><a class="dropdown-item" href="#">Английский</a></li>
+                            <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-corp">
+                        <i class="fa-solid fa-magnifying-glass fs-6 pt-1" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 fw-light gap-xxl-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Компания</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Каталог продукции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">География продаж</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="nav-link d-xxl-block d-none btn-bordered">
+                            Cырье
+                        </a>
+                        <a href="#" class="nav-link d-xxl-block d-none btn-bordered">
+                            Инвест проекты
+                        </a>
+                        <div class="dropdown d-xl-block d-none">
+                            <button class="border-0 btn-corp d-flex align-items-center dropdown-toggle language" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ру
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Английский</a></li>
+                                <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="d-xl-block d-none btn-corp">
+                            <i class="fa-solid fa-magnifying-glass  fs-6" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <div class="row gy-3 flex-lg-row-reverse justify-content-between">
+                    <div class="col-xl-2 col-lg-3">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <!-- offcanvas -->
+                            <div class="d-xl-none d-block">
+                                <button class="btn-corp border-0 py-2 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-ellipsis-vertical me-2"></i> Каталог
+                                </button>
+
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title text-2xl fw-bold text-corp" id="offcanvasExampleLabel">Каталог</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <aside class="side-nav-menu pt-xl-2">
+                                            <ul class="list-group list-group-flush menu">
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Полипропиленовые мешки</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="woven-polypropylene-bags.html" class="aside-link">Мешки тканые полипропиленовые</a></li>
+                                                        <li><a href="polymer-box-bags.html" class="aside-link">Мешки полимерные коробчатые клапанные</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item ">
+                                                    <a href="polypropylene-fabric.html" class="aside-link main-category-link">Полипропиленовая ткань</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Мягкие контейнеры</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="single-strap-big-bags.html" class="aside-link">Одностропные биг-бэги</a></li>
+                                                        <li><a href="double-strap-big-bags.html" class="aside-link">Двухстропные биг-бэги</a></li>
+                                                        <li><a href="four-strap-big-bags.html" class="aside-link">Четрёхстропные биг-бэги</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Выдувные плёнки</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="polyethylene-shrink-film.html" class="aside-link">Плёнка полиэтиленовая термоусадочная</a></li>
+                                                        <li><a href="stretch-hood.html" class="aside-link">Стретч-худ</a></li>
+                                                        <li><a href="polyethylene-film.html" class="aside-link">Плёнка полиэтиленовая</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Вкладыши</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="protective-liners.html" class="aside-link">Вкладыши защитные</a></li>
+                                                        <li><a href="liner-bags.html" class="aside-link">Лайнер-бэги</a></li>
+                                                        <li><a href="pology.html" class="aside-link">Пологи</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">БОПП плёнки</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Термосвариваемые плёнки</a>
+                                                            <ul class="submenu list-unstyled ps-3">
+                                                                <li><a href="transparent-heat-sealable-film.html" class="aside-link">Прозрачная термосвариваемая плёнка</a></li>
+                                                                <li><a href="white-heat-sealable-film.html" class="aside-link">Белая термосвариваемая плёнка</a></li>
+                                                                <li><a href="metallized-heat-sealable-film.html" class="aside-link">Металлизированная термосвариваемая плёнка с алюминиевым
+                                                                        покрытием</a></li>
+                                                                <li><a href="pearl-heat-sealable-film.html" class="aside-link">Жемчужная термосвариваемая плёнка</a></li>
+                                                                <li><a href="pearl-white-heat-sealable-film.html" class="aside-link">Жемчужно-белая термосвариваемая плёнка</a></li>
+                                                                <li><a href="matte-film.html" class="aside-link">Матовая плёнка</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Нетермосвариваемые плёнки</a>
+                                                            <ul class="submenu list-unstyled ps-3">
+                                                                <li><a href="transparent-non-heat-sealable-film.html" class="aside-link">Прозрачная нетермосвариваемая плёнка</a></li>
+                                                                <li><a href="metallized-non-welded-film.html" class="aside-link">Металлизированная нетермосвариваемая плёнка</a></li>
+                                                                <li><a href="matte-non-welded-film.html" class="aside-link">Матовая плёнка</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Плёнки для специальных применений</a>
+                                                            <ul class="submenu list-unstyled ps-3">
+                                                                <li><a href="transparent-label-film.html" class="aside-link">Прозрачная плёнка для этикеток</a></li>
+                                                                <li><a href="pearl-white-film.html" class="aside-link">Жемчужно-белая плёнка</a></li>
+                                                                <li><a href="transparent-film-for-adhesive-tapes.html" class="aside-link">Прозрачная плёнка для липких лент</a></li>
+                                                                <li><a href="pearl-white-metallized-film.html" class="aside-link">Жемчужно-белая металлизированная плёнка</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Стретч-плёнка</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="manual-stretch-film.html" class="aside-link">Ручная стретч-плёнка</a></li>
+                                                        <li><a href="machine-made-stretch-film.html" class="aside-link">Машинная стретч-плёнка</a></li>
+                                                        <li><a href="premium-series-machine-stretch-film.html" class="aside-link">Машинная стретч-плёнка серии Premium</a></li>
+                                                        <li><a href="power-series-machine-stretch-film.html" class="aside-link">Машинная стретч-плёнка серии Power</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" aria-expanded="false" class="aside-link main-category-link">Прочее</a>
+                                                    <ul class="submenu list-unstyled ps-3">
+                                                        <li><a href="the-iff-thread.html" class="aside-link">Нить МФЛ</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#form" class="btn-corp ms-lg-0 ms-auto ff-golos w-fit-content d-block py-2">
+                                Оставить заявку<i class="bi bi-chevron-down ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="w-100 d-flex">
+                            <p class="fw-bold me-2">Вы здесь:</p>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Продукция</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Полипропиленовые мешки</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Мешки полимерные коробчатые клапанные</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg-5 mt-3">
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100">
+                            <h5 class="text-corp text-xl d-xl-block d-none">Каталог</h5>
+                            <h4 class="text-corp fw-bold text-2xl lh-1 d-xl-none d-block">Мешки тканые полипропиленовые</h4>
+                            <aside class="side-nav-menu d-xl-block d-none pt-xl-2">
+                                <ul class="list-group list-group-flush menu">
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Полипропиленовые мешки</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="woven-polypropylene-bags.html" class="aside-link">Мешки тканые полипропиленовые</a></li>
+                                            <li><a href="polymer-box-bags.html" class="aside-link">Мешки полимерные коробчатые клапанные</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="polypropylene-fabric.html" class="aside-link main-category-link">Полипропиленовая ткань</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Мягкие контейнеры</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="single-strap-big-bags.html" class="aside-link">Одностропные биг-бэги</a></li>
+                                            <li><a href="double-strap-big-bags.html" class="aside-link">Двухстропные биг-бэги</a></li>
+                                            <li><a href="four-strap-big-bags.html" class="aside-link">Четрёхстропные биг-бэги</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Выдувные плёнки</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="polyethylene-shrink-film.html" class="aside-link">Плёнка полиэтиленовая термоусадочная</a></li>
+                                            <li><a href="stretch-hood.html" class="aside-link">Стретч-худ</a></li>
+                                            <li><a href="polyethylene-film.html" class="aside-link">Плёнка полиэтиленовая</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Вкладыши</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="protective-liners.html" class="aside-link">Вкладыши защитные</a></li>
+                                            <li><a href="liner-bags.html" class="aside-link">Лайнер-бэги</a></li>
+                                            <li><a href="pology.html" class="aside-link">Пологи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">БОПП плёнки</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Термосвариваемые плёнки</a>
+                                                <ul class="submenu list-unstyled ps-3">
+                                                    <li><a href="transparent-heat-sealable-film.html" class="aside-link">Прозрачная термосвариваемая плёнка</a></li>
+                                                    <li><a href="white-heat-sealable-film.html" class="aside-link">Белая термосвариваемая плёнка</a></li>
+                                                    <li><a href="metallized-heat-sealable-film.html" class="aside-link">Металлизированная термосвариваемая плёнка с алюминиевым
+                                                            покрытием</a></li>
+                                                    <li><a href="pearl-heat-sealable-film.html" class="aside-link">Жемчужная термосвариваемая плёнка</a></li>
+                                                    <li><a href="pearl-white-heat-sealable-film.html" class="aside-link">Жемчужно-белая термосвариваемая плёнка</a></li>
+                                                    <li><a href="matte-film.html" class="aside-link">Матовая плёнка</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Нетермосвариваемые плёнки</a>
+                                                <ul class="submenu list-unstyled ps-3">
+                                                    <li><a href="transparent-non-heat-sealable-film.html" class="aside-link">Прозрачная нетермосвариваемая плёнка</a></li>
+                                                    <li><a href="metallized-non-welded-film.html" class="aside-link">Металлизированная нетермосвариваемая плёнка</a></li>
+                                                    <li><a href="matte-non-welded-film.html" class="aside-link">Матовая плёнка</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#" aria-expanded="false" class="aside-link list-group-item ">Плёнки для специальных применений</a>
+                                                <ul class="submenu list-unstyled ps-3">
+                                                    <li><a href="transparent-label-film.html" class="aside-link">Прозрачная плёнка для этикеток</a></li>
+                                                    <li><a href="pearl-white-film.html" class="aside-link">Жемчужно-белая плёнка</a></li>
+                                                    <li><a href="transparent-film-for-adhesive-tapes.html" class="aside-link">Прозрачная плёнка для липких лент</a></li>
+                                                    <li><a href="pearl-white-metallized-film.html" class="aside-link">Жемчужно-белая металлизированная плёнка</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Стретч-плёнка</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="manual-stretch-film.html" class="aside-link">Ручная стретч-плёнка</a></li>
+                                            <li><a href="machine-made-stretch-film.html" class="aside-link">Машинная стретч-плёнка</a></li>
+                                            <li><a href="premium-series-machine-stretch-film.html" class="aside-link">Машинная стретч-плёнка серии Premium</a></li>
+                                            <li><a href="power-series-machine-stretch-film.html" class="aside-link">Машинная стретч-плёнка серии Power</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" aria-expanded="false" class="aside-link main-category-link">Прочее</a>
+                                        <ul class="submenu list-unstyled ps-3">
+                                            <li><a href="the-iff-thread.html" class="aside-link">Нить МФЛ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <img src="images/polipropilen/2.png" alt="" class="img-fluid object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <h4 class="text-corp fw-bold text-2xl lh-1 d-xl-block d-none">Мешки полимерные коробчатые клапанные</h4>
+                            <p class="ff-golos fw-normal text-dust">Полипропиленовые мешки коробчатого типа производятся по технологии и на оборудовании ведущего мирового производителя — компании
+                                Starlinger (Австрия), которая уже более 50 лет разрабатывает
+                                инновационные решения в сфере переработки полимеров и промышленного изготовления упаковки.
+                                <br><br>
+                                Одним из наиболее известных достижений Starlinger являются клапанные коробчатые мешки AD*STAR®, объединяющие преимущества бумажных и полимерных мешков. В производстве
+                                используются исключительно
+                                высококачественные сырьё и компоненты, что обеспечивает соответствие продукции требованиям технического регламента Таможенного союза ТР ТС 005/2011 «О безопасности
+                                упаковки».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <ul class="nav nav-pills tabs flex-lg-row flex-column mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Применение</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Конструкция</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Технологии печати</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                            aria-selected="false">Преимущества</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <p>Клапанные коробчатые мешки AD*STAR® благодаря высокой прочности и удобной конструкции используются для упаковки, хранения и перевозки самых разных сыпучих материалов и
+                            продуктов. Чаще всего в них
+                            фасуют цемент, муку, удобрения, строительные сухие смеси, продукты питания, корма для животных и другие товары.
+                            <br><br>
+                            В сравнении с бумажными мешками полипропиленовые изделия легче по весу, выдерживают больший насыпной объём и устойчивы к влаге. Такие мешки подходят для работы на
+                            автоматических фасовочных линиях, а
+                            после заполнения приобретают прямоугольную форму, что значительно упрощает их паллетирование, хранение и транспортировку.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                </div>
+            </div>
+        </section>
+        <section id="form" class="py-lg-5 py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h3 class="text-xl fw-bold ff-golos text-center text-corp">Отправить заявку</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4">
+                            <p class="text-gray-light ff-golos text-center">Оставьте заявку на расчёт и наши менеджеры свяжутся с вами с ближайшее время.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="w-100 h-100 bg-main p-lg-5 p-3 rounded-4">
+                                <form>
+                                    <div class="row gy-3 gx-lg-5">
+                                        <div class="col-lg-4">
+                                            <input type="text" placeholder="Фамилия Имя Отчество*" class="form-control">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input type="text" placeholder="Организация*" class="form-control">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input type="tel" placeholder="Телефон*" class="form-control">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <textarea name="message" placeholder="Заявка*" class="form-control"></textarea>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input type="number" min="1" placeholder="Кол-во товара (тонн, кг, шт.)" class="form-control">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="file-upload text-corp">
+                                                <i class="fa-solid fa-paperclip"></i>
+                                                <span>Прикрепить файл</span>
+                                                <input type="file" name="myFile" class="d-none">
+                                            </label>
+                                        </div>
+                                        <p>Нажимая «Отправить» вы принимаете соглашение на обработку персональных данных.</p>
+                                    </div>
+                                    <button type="submit" class="btn-corp mt-3 border-0 rounded-4 py-2  px-5 mx-auto w-fit-content d-block">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-xl fw-bold ff-golos text-center text-corp mb-lg-5 mb-3">Смотрите также</h3>
+                <div class="position-relative">
+                    <div class="slick-slider watch-later">
+                        <div class="slider-item">
+                            <div class="w-100 h-100 slider-card p-lg-5 p-3">
+                                <img src="images/polipropilen/1.png" alt="" class="img-fluid d-block mx-auto">
+                                <p class="text-center fs-5">Мешки тканые полипропиленовые</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="w-100 d-flex flex-sm-column flex-row">
+                        <img src="icons/logo-footer.svg" alt="" class="img-fluid logo-footer">
+                        <p class="text-center fw-medium lh-1 mt-2 fs-6 ms-sm-0 ms-3">С нами сотрудничают более
+                            1800 производителей полимерной продукции</p>
+                    </div>
+                </div>
+                <div class="col-lg-1 d-lg-block d-none"></div>
+                <div class="col-lg-3 col-sm-6">
+                    <p class="fw-bold text-corp fs-5">Наши направления</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">Полимерное сырье</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Готовая продукция</a>
+                        </li>
+                        <li>
+                            <a href="#">Инвестиционные проекты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <p class="fw-bold text-corp fs-5">Полезные ссылки</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Сотрудничество</a>
+                        </li>
+                        <li>
+                            <a href="#">Преимущества</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <p class="fw-bold text-corp fs-5">Контакты</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-geo-alt text-corp me-2 fs-5"></i>
+                            <a href="#">Ташкент, Мирзо-Улугбекский район,
+                                массив А. Югнаки, 28/41.</a>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-telephone text-corp me-2 fs-5"></i>
+                            <a href="#">+998 55 501 77 88</a>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-telephone text-corp me-2 fs-5"></i>
+                            <a href="#">+998 55 502 77 88</a>
+                        </li>
+                        <li class="d-flex">
+                            <i class="bi bi-envelope text-corp me-2 fs-5"></i>
+                            <a href="#">info@primepolymergroup.uz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pt-lg-5 pt-3 border-light-top">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-lg-4">
+                        <p class="fw-bold text-corp fs-5">Связаться с нами</p>
+                        <ul class="list-inline d-flex flex-md-row flex-column gap-2">
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-telegram text-corp fs-5 me-1"></i>
+                                    <span>Telegram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-whatsapp text-corp fs-5 me-1"></i>
+                                    <span>WhatsUp</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-wechat text-corp fs-5 me-1"></i>
+                                    <span>WeChat</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="fw-bold text-corp fs-5">Следите за нами</p>
+                        <ul class="list-inline d-flex flex-md-row flex-column gap-2">
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-youtube text-corp fs-5 me-1"></i>
+                                    <span>Youtube</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-facebook text-corp fs-5 me-1"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-instagram text-corp fs-5 me-1"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-linkedin text-corp fs-5 me-1"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
