@@ -21,6 +21,13 @@ header {
     transition: all 0.3s ease;
 }
 
+a.aside-link:not(.main-category-link) {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    display: block;
+}
+
 .aside-link:hover {
     text-decoration: underline;
     color: var(--color-corp);
@@ -64,8 +71,16 @@ header {
     height: 400px;
 }
 
+.slider-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .slider-card img {
     transition: all 0.3s ease;
+    object-fit: contain;
 }
 
 .slider-card:hover img {
@@ -101,4 +116,5 @@ footer {
         border-radius: 0;
         height: 300px;
     }
+
 }
