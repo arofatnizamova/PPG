@@ -1,0 +1,7 @@
+.text-2xl {
+    font-size: clamp(1.25rem, 0.875rem + 1.875vw, 3.125rem);
+}
+
+.text-xl {
+    font-size: clamp(1.25rem, 0.975rem + 1.375vw, 2.625rem);
+}

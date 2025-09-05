@@ -1,0 +1,84 @@
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1500px;
+    }
+}
+
+.nav-link {
+    color: var(--color-corp);
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.language.dropdown-toggle::after {
+    border: none;
+    content: "\F272";
+    font-family: 'bootstrap-icons';
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../icons/burger.svg');
+    width: 1em;
+    height: 1em;
+}
+
+.language-mobile.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: unset;
+    right: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 5px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 5px;
+}
+
+.breadcrumb {
+    color: #948585;
+    --bs-breadcrumb-divider-color: #948585;
+    --bs-breadcrumb-item-active-color: #948585;
+    font-weight: 200;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: var(--color-corp);
+}
+
+.form-control {
+    border-radius: 3px;
+}
+
+.form-control::placeholder {
+    color: #A8A8A8;
+}

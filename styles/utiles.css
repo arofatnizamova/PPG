@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+.ff-golos {
+    font-family: var(--font-first);
+}
+
+.text-corp {
+    color: var(--color-corp);
+}
+
+.text-dust {
+    color: var(--color-dust);
+}
+
+.text-gray-light {
+    color: var(--color-gray-light);
+}
+
+.bg-main {
+    background: var(--color-bg);
+}

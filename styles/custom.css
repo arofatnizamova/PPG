@@ -1,0 +1,89 @@
+body {
+    font-family: var(--font-second);
+}
+
+.btn-bordered {
+    border: 1px solid var(--color-corp);
+    padding: 5px 10px;
+}
+
+.btn-corp {
+    background: var(--color-corp);
+    color: white;
+    padding: 5px 10px;
+}
+
+header {
+    border-bottom: 2px solid var(--color-corp);
+}
+
+.aside-link {
+    transition: all 0.3s ease;
+}
+
+.aside-link:hover {
+    text-decoration: underline;
+    color: var(--color-corp);
+    font-weight: 600;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.main-category-link {
+    font-size: 18px;
+    color: var(--color-corp);
+    font-family: var(--font-first);
+}
+
+.list-group-item::before {
+    content: "";
+    background: url('../icons/arrow.svg') no-repeat;
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.mm-active.list-group-item::before {
+    transform: rotate(270deg);
+}
+
+.file-upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.slider-card {
+    border: 2px solid var(--color-corp);
+    border-radius: 30px;
+}
+
+footer {
+    border-top: 7px solid rgba(104, 110, 124, 0.28);
+}
+
+.border-light-top {
+    border-top: 7px solid rgba(0, 191, 255, 0.14);
+}
+
+
+@media(max-width: 990px) {
+    .nav-pills.tabs button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .logo-footer {
+        width: 100px;
+    }
+
+    .fs-6 {
+        font-size: 0.8rem !important;
+    }
+}
