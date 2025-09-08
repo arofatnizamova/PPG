@@ -75,6 +75,11 @@
     background-color: var(--color-corp);
 }
 
+.nav-pills .nav-link {
+    background: #EFEFEF;
+    margin-right: 20px;
+}
+
 .form-control {
     border-radius: 3px;
 }
@@ -83,8 +88,39 @@
     color: #A8A8A8;
 }
 
+.table thead th {
+    background: #0b2b57;
+    color: #fff;
+    vertical-align: middle;
+    border-color: white !important;
+    white-space: nowrap;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td,
+.table th,
+.table tr {
+    border-color: var(--color-corp);
+}
+
+@media(max-width: 990px) {
+    .nav-pills .nav-link {
+        margin-right: unset;
+        margin-bottom: 5px;
+        font-size: 16px !important;
+    }
+}
+
 @media(max-width:576px) {
     .nav-link {
         font-size: 20px !important;
+    }
+
+    .table {
+        font-size: 16px;
+        width: 250%;
     }
 }

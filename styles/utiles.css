@@ -11,6 +11,8 @@ a {
     height: 80%;
 }
 
+
+
 .ff-golos {
     font-family: var(--font-first);
 }
@@ -29,4 +31,8 @@ a {
 
 .bg-main {
     background: var(--color-bg);
+}
+
+.bg-corp {
+    background: var(--color-corp);
 }
