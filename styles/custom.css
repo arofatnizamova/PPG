@@ -95,7 +95,12 @@ footer {
     border-top: 7px solid rgba(0, 191, 255, 0.14);
 }
 
-
+.info-box {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
 
 @media(max-width: 990px) {
     .nav-pills.tabs button {

@@ -69,6 +69,14 @@
     font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
 }
 
+.breadcrubs-category .breadcrumb {
+    color: white;
+    font-weight: 500;
+    --bs-breadcrumb-divider-color: white;
+    --bs-breadcrumb-item-active-color: white;
+    font-size: 18px;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: white;
